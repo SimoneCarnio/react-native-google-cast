@@ -47,6 +47,14 @@ export default class CastContext {
   static showCastDialog(): Promise<boolean> {
     return Native.showCastDialog()
   }
+ 
+/**
+   * Stop
+   */
+ static endSession(stopCasting): Promise<boolean> {
+    return Native.endSession(stopCasting)
+  }
+ 
 
   /**
    * Displays the Expanded Controls screen programmatically. Users can also open it by clicking on Mini Controls.
